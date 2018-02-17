@@ -78,9 +78,15 @@ $app->singleton(
 |
 */
 
+$app->instance('path.config', app()->basePath() . DIRECTORY_SEPARATOR . 'config');
+$app->configure('scout');
+
+$app->register(Laravel\Scout\ScoutServiceProvider::class);
+
 // $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
+$app->configure('scout');
 
 /*
 |--------------------------------------------------------------------------
