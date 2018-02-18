@@ -22,7 +22,7 @@ class SearchController extends Controller
 
     public function index(Request $request){
 
-        return 'hello Gitz';
+        return User::all();
     }
 
 }

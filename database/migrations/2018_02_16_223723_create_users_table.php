@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->text('biography');
             $table->text('api_token');
+            $table->integer('rating');
             $table->timestamps();
         });
     }

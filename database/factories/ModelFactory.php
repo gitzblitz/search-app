@@ -19,5 +19,6 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'biography'=> $faker->paragraph,
         'password' => $faker->password,
         'api_token' => str_random(10),
+        'rating' => rand(1,5)
     ];
 });
