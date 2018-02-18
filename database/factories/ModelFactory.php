@@ -12,8 +12,12 @@
 */
 
 $factory->define(App\User::class, function (Faker\Generator $faker) {
+
     return [
         'name' => $faker->name,
-        'email' => $faker->email,
+        'city' => $faker->city,
+        'biography'=> $faker->paragraph,
+        'password' => $faker->password,
+        'api_token' => str_random(10),
     ];
 });
