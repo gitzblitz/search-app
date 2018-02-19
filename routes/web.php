@@ -13,11 +13,11 @@
 
 
 
-$router->group(['prefix' => 'api/v1'], function() use ($router)
+$router->group(['prefix' => 'api'], function() use ($router)
 {
     $router->get('/', 'HomeController@index');
 
-    $router->get('/search', 'SearchController@index');
+    $router->get('/search', 'SearchController@search');
 
 
 });

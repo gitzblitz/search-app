@@ -25,4 +25,18 @@ class SearchController extends Controller
         return User::all();
     }
 
+    public function search(Request $request){
+
+        $error = ['error' => 'No results found, please try with different keywords.'];
+
+        if ($request->has('q')){
+
+            $candidates = User::search($request->get('q'))->get();
+
+            return $candidates->count()? $candidates : $error;
+        }
+
+        return $error;
+    }
+
 }

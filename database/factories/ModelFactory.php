@@ -16,6 +16,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'city' => $faker->city,
+        'profile_image' =>'http://loremflickr.com/320/240?random='.rand(1, 100),
         'biography'=> $faker->paragraph,
         'password' => $faker->password,
         'api_token' => str_random(10),
