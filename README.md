@@ -8,12 +8,12 @@ This project is the backend for another Vue JS project to search for candidates
 
 2. Change to directory
 
-3. Set up your **.env** file
+3. Set up your **.env** file with environment variables and Algolia API keys
 
-3. Run ```$ composer install```
+4. Run ```$ composer install```
 
-4. Run the migrations ```php artisan migrate```
+5. Run the migrations ```php artisan migrate```
 
-5. Run the database seeder ```php artisan migrate --seed```
+6. Run the database seeder ```php artisan migrate --seed```
 
-6. Run the server ```php -S localhost:8000 -t public```
+7. Run the server ```php -S localhost:8000 -t public```
