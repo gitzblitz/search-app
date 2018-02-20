@@ -19,4 +19,4 @@ This project is the backend for another Vue JS project to search for candidates
 7. Run the server ```php -S localhost:8000 -t public```
 
 
-[Candidates](Candidates-south.png)
+![Candidates](Candidates-south.png)
