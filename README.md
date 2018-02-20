@@ -8,7 +8,7 @@ This project is the backend for another Vue JS project to search for candidates
 
 2. Change to directory
 
-3. Set up your **.env** file with environment variables and Algolia API keys
+3. Set up your **.env** file with environment variables and Algolia API keys (https://www.algolia.com)
 
 4. Run ```$ composer install```
 
